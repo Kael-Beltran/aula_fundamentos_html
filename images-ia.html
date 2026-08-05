@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#021038">
 
     <!-- Fonte premium -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
 
     <style>
         /* ===== Reset & Variáveis ===== */
@@ -38,7 +38,7 @@
 
         body {
             font-family: "Cinzel Decorative", serif;
-            background: radial-gradient(circle at 20% 20%, #0b1a4a, var(--bg) 90%);
+            background: radial-gradient(circle at 20% 20%, #000000, var(--bg) 90%);
             color: var(--text);
             min-height: 100vh;
             display: flex;
@@ -51,7 +51,7 @@
         .wrap {
             max-width: var(--max-width);
             width: 100%;
-            background: rgba(1, 6, 56, 0.55);
+            background: rgba(255, 1, 1, 0.55);
             backdrop-filter: blur(3px);
             -webkit-backdrop-filter: blur(3px);
             border-radius: var(--radius);
@@ -72,7 +72,7 @@
             font-weight: 900;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            background: linear-gradient(135deg, #ffffff 30%, var(--accent) 80%);
+            background: linear-gradient(135deg, #3c0147 30%, var(--accent) 80%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -255,7 +255,7 @@
 
         .lightbox-content .lb-caption {
             padding: 0.8rem 1.5rem;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(70, 1, 57, 0.6);
             backdrop-filter: blur(4px);
             text-align: center;
             font-size: 0.95rem;
@@ -267,7 +267,7 @@
             position: absolute;
             top: 12px;
             right: 18px;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(71, 1, 64, 0.6);
             backdrop-filter: blur(4px);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 50%;
@@ -283,12 +283,12 @@
             transition: var(--transition);
             z-index: 10;
             line-height: 1;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 12px rgba(57, 0, 64, 0.5);
         }
 
         .lightbox-close:hover {
             background: var(--accent);
-            color: #010638;
+            color: #3a004c;
             transform: rotate(90deg);
             border-color: var(--accent);
         }
@@ -390,24 +390,17 @@
 
             // ===== CONJUNTO DE IMAGENS (high-end) =====
             const carros = [{
-                url: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80',
-                nome: 'Ferrari F8 Tributo',
-                destaque: true
-            }, {
-                url: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
-                nome: 'Porsche 911 Turbo'
-            }, {
-                url: 'https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800&q=80',
-                nome: 'Lamborghini Huracán'
+                url: 'https://miamiimports.com.br/wp-content/uploads/2024/04/911-carrera-s-23.jpg',
+                nome: 'Porsche 911 Carrera S'
             }, {
                 url: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
-                nome: 'Aston Martin Vantage'
+                nome: 'BMW Série 3'
             }, {
                 url: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80',
-                nome: 'McLaren 720S'
+                nome: 'Mercedes AMG GT-R Pro'
             }, {
                 url: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80',
-                nome: 'Mercedes-AMG GT'
+                nome: 'Porsche 911 Carrera S'
             }];
 
             // ===== REFERÊNCIAS =====
